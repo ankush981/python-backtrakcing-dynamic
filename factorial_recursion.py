@@ -13,5 +13,7 @@ def factorial_tail_call(n, accumulator=1):
     return factorial_tail_call(n-1, n * accumulator)
 
 if __name__ == "__main__":
-    print(factorial_head_call(5))
-    print(factorial_tail_call(5))
+    head_call_result = factorial_head_call(5)
+    tail_call_result = factorial_tail_call(5)
+    assert head_call_result == tail_call_result
+    print(head_call_result)
