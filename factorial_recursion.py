@@ -4,13 +4,13 @@ def factorial_head_call(n):
     if n == 1:
         return 1;
     
-    return n * factorial_head_call(n-1)
+    return n * factorial_head_call(n - 1)
 
-def factorial_tail_call(n, accumulator=1):
+def factorial_tail_call(n, accumulator = 1):
     if n == 1:
         return accumulator # as the accumulator contains the final result of all multiplications
     
-    return factorial_tail_call(n-1, n * accumulator)
+    return factorial_tail_call(n - 1, n * accumulator)
 
 if __name__ == "__main__":
     head_call_result = factorial_head_call(5)

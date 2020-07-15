@@ -3,7 +3,7 @@ def fibonacci_head_call(n):
     if n == 0: return 0
     if n == 1: return 1
 
-    return fibonacci_head_call(n-1) + fibonacci_head_call(n-2)
+    return fibonacci_head_call(n - 1) + fibonacci_head_call(n - 2)
 
 # While the above solution is extremely "intuitive", it's what the mind first reaches for. However, we can do slightly better by optimizing for tail recursion
 def fibonacci_tail_call(n, n1 = 0, n2 = 1):
