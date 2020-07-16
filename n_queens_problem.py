@@ -29,6 +29,7 @@ class QueensProblem:
                 # otherwise, the earlier placement of the queen was wrong, so we reset it and go back to the next row (as dictated by the loop)
                 self.chessboard[rowIndex][colIndex] = 0
         
+        # we've run out of squares on the first column to place the first queen
         return False
     
     def isPlaceValid(self, rowIndex, colIndex):
